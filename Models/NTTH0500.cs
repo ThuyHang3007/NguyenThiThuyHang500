@@ -10,9 +10,12 @@ namespace NguyenThiThuyHang500.Models
         [Display(Name ="Mã")]
         public string NTTHID {get; set; }
         [StringLength (50)]
+        [Required]
+
         [Display(Name ="Tên")]
 
         public string NTTHName {get; set; }
+        [Required]
         [Display(Name ="Giới Tính")]
         public Boolean NTTHGender {get;set;}
 

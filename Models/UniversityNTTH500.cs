@@ -5,12 +5,14 @@ namespace NguyenThiThuyHang500.Models
 {
     public class UniversityNTTH500
     {
-        public int Id { get; set; }
-        public string Title { get; set; }
+        [Key]
+        [StringLength(20)]
+        [Display(Name ="Mã trường")]
+        public string UniversityID {get; set; }
+        [StringLength (50)]
+        [Display(Name ="Tên trường")]
 
-        [DataType(DataType.Date)]
-        public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
-        public decimal Price { get; set; }
+        public string UniversityName {get; set; }
+
     }
 }
