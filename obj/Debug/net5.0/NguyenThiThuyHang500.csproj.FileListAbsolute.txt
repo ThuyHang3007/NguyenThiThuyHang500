@@ -163,3 +163,8 @@ F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\NguyenThiThuyHang500.dll
 F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\ref\NguyenThiThuyHang500.dll
 F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\NguyenThiThuyHang500.pdb
 F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\NguyenThiThuyHang500.genruntimeconfig.cache
+F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\Razor\Views\UniversityNTTH500\Create.cshtml.g.cs
+F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\Razor\Views\UniversityNTTH500\Delete.cshtml.g.cs
+F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\Razor\Views\UniversityNTTH500\Details.cshtml.g.cs
+F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\Razor\Views\UniversityNTTH500\Edit.cshtml.g.cs
+F:\hggyfg\NguyenThiThuyHang500\obj\Debug\net5.0\Razor\Views\UniversityNTTH500\Index.cshtml.g.cs

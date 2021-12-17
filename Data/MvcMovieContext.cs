@@ -13,4 +13,6 @@ using NguyenThiThuyHang500.Models;
         }
 
         public DbSet<NguyenThiThuyHang500.Models.UniversityNTTH500> UniversityNTTH500 { get; set; }
+
+        public DbSet<NguyenThiThuyHang500.Models.NTTH0500> NTTH0500 { get; set; }
     }
