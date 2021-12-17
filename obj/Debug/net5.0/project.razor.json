@@ -15619,8 +15619,18 @@
   "RootNamespace": "NguyenThiThuyHang500",
   "Documents": [
     {
+      "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\UniversityNTTH500\\Edit.cshtml",
+      "TargetPath": "Views\\UniversityNTTH500\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\UniversityNTTH500\\Details.cshtml",
+      "TargetPath": "Views\\UniversityNTTH500\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15631,6 +15641,21 @@
     {
       "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\UniversityNTTH500\\Index.cshtml",
+      "TargetPath": "Views\\UniversityNTTH500\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\UniversityNTTH500\\Delete.cshtml",
+      "TargetPath": "Views\\UniversityNTTH500\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\hggyfg\\NguyenThiThuyHang500\\Views\\UniversityNTTH500\\Create.cshtml",
+      "TargetPath": "Views\\UniversityNTTH500\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
