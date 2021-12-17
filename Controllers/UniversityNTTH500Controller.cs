@@ -25,7 +25,7 @@ namespace NguyenThiThuyHang500.Controllers
         }
 
         // GET: UniversityNTTH500/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(string id)
         {
             if (id == null)
             {
@@ -33,7 +33,7 @@ namespace NguyenThiThuyHang500.Controllers
             }
 
             var universityNTTH500 = await _context.UniversityNTTH500
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UniversityId == id);
             if (universityNTTH500 == null)
             {
                 return NotFound();
@@ -53,7 +53,7 @@ namespace NguyenThiThuyHang500.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price")] UniversityNTTH500 universityNTTH500)
+        public async Task<IActionResult> Create([Bind("UniversityId,UniversityName")] UniversityNTTH500 universityNTTH500)
         {
             if (ModelState.IsValid)
             {
@@ -65,7 +65,7 @@ namespace NguyenThiThuyHang500.Controllers
         }
 
         // GET: UniversityNTTH500/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string id)
         {
             if (id == null)
             {
@@ -85,9 +85,9 @@ namespace NguyenThiThuyHang500.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price")] UniversityNTTH500 universityNTTH500)
+        public async Task<IActionResult> Edit(string id, [Bind("UniversityId,UniversityName")] UniversityNTTH500 universityNTTH500)
         {
-            if (id != universityNTTH500.Id)
+            if (id != universityNTTH500.UniversityId)
             {
                 return NotFound();
             }
@@ -101,7 +101,7 @@ namespace NguyenThiThuyHang500.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!UniversityNTTH500Exists(universityNTTH500.Id))
+                    if (!UniversityNTTH500Exists(universityNTTH500.UniversityId))
                     {
                         return NotFound();
                     }
@@ -116,7 +116,7 @@ namespace NguyenThiThuyHang500.Controllers
         }
 
         // GET: UniversityNTTH500/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(string id)
         {
             if (id == null)
             {
@@ -124,7 +124,7 @@ namespace NguyenThiThuyHang500.Controllers
             }
 
             var universityNTTH500 = await _context.UniversityNTTH500
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.UniversityId == id);
             if (universityNTTH500 == null)
             {
                 return NotFound();
@@ -136,7 +136,7 @@ namespace NguyenThiThuyHang500.Controllers
         // POST: UniversityNTTH500/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteConfirmed(string id)
         {
             var universityNTTH500 = await _context.UniversityNTTH500.FindAsync(id);
             _context.UniversityNTTH500.Remove(universityNTTH500);
@@ -144,9 +144,9 @@ namespace NguyenThiThuyHang500.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        private bool UniversityNTTH500Exists(int id)
+        private bool UniversityNTTH500Exists(string id)
         {
-            return _context.UniversityNTTH500.Any(e => e.Id == id);
+            return _context.UniversityNTTH500.Any(e => e.UniversityId == id);
         }
     }
 }

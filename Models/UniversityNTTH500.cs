@@ -7,12 +7,12 @@ namespace NguyenThiThuyHang500.Models
     {
         [Key]
         [StringLength(20)]
-        [Display(Name ="Mã trường")]
-        public string UniversityID {get; set; }
-        [StringLength (50)]
-        [Display(Name ="Tên trường")]
+        [Display(Name = "Mã Trường")]
+        public string UniversityId { get; set; }
+        [StringLength(50)]
+        [Display(Name = "Tên Trường")]
 
-        public string UniversityName {get; set; }
+        public string UniversityName { get; set; }
 
     }
 }
